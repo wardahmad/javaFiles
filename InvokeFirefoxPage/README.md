@@ -1,6 +1,6 @@
 ### Simple program in Java using Selenium to evoke the Firefox browser
 
-* 
+### Source Code
 ```Java
 package firefox;
 
@@ -38,5 +38,5 @@ public static void main(String[] args) throws InterruptedException {
 }
 ```
 
-* The Result
+### The Result
 <img src="img/FirefoxResult.png" />

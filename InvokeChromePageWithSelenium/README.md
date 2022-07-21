@@ -1,6 +1,6 @@
 ### Simple program in Java using Selenium to evoke the Chrome browser
 
-* Source Code
+### Source Code
 
 ```Java
 package chrome;
@@ -31,5 +31,5 @@ public WebDriver driver;
 	}
 }
 ```
-* The Result
+### The Result
 <img src="img/googleChrome.png" />

@@ -1,6 +1,6 @@
 ### Simple program in Java using Selenium to evoke the IE browser
 
-* Source Code
+### Source Code
 
 ```Java
 package iEBrowser;
@@ -39,5 +39,5 @@ public class InvokeIEPage {
 }
 ```
 
-* The Result
+### The Result
 <img src="img/IEResult.png" />

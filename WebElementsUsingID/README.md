@@ -1,11 +1,12 @@
 ### Follow the below steps to locate web elements using Chrome’s Developer tool:
 
-* Step #1: launch the Google Chrome’s Developer tool. 
+* Step #1: launch the Google Chrome’s Developer tool.
 <img src="img/img1.png" />
 
-* locate the desired object within the web page. Right-click on the desired web element and inspect. 
+* Step #2: locate the desired object within the web page. Right-click on the desired web element and inspect. 
 <img src="img/img2.png" />
 
+* Step #3: Click on Ctrl+F, and type 'localize-active-lang'
 ### Source Code
 ```Java
 package codingDojo;

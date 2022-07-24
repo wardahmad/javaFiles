@@ -11,6 +11,7 @@
 package codingDojo;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.Test;
@@ -24,10 +25,12 @@ public WebDriver driver;
 		System.setProperty("webdriver.chrome.driver", "C:\\Users\\white\\Desktop\\QA\\Auto\\chromedriver.exe");
 				
 		driver = new ChromeDriver();
-		driver.navigate().to("https://www.codingdojo.com/");
 		driver.manage().window().maximize();
-		driver.findElement(By.id("campus_tours_modal"));
-		Thread.sleep(4000);
+		driver.navigate().to("https://www.codingdojo.com/");
+		JavascriptExecutor js = (JavascriptExecutor)driver;
+		js.executeScript("scrollBy(0, 7000)");
+		driver.findElement(By.id("localize-active-lang")).click();
+		Thread.sleep(2000);
 		driver.close();
 	}
 }

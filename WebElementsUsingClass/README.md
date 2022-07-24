@@ -37,3 +37,6 @@ public WebDriver driver;
 }
 
 ```
+
+### The Result
+<img src="img/img3.png" />

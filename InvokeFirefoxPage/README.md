@@ -5,8 +5,8 @@
 package firefox;
 
 import org.openqa.selenium.By;
-import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
 public class InvokeFirefoxPage {
@@ -23,19 +23,26 @@ public static void main(String[] args) throws InterruptedException {
         driver = new FirefoxDriver();
         
         //Using get() method to open a web page
-        driver.get("https://www.javatpoint.com/");
+        driver.get("https://www.tutorialspoint.com/index.htm");
         
-        driver.manage().window().maximize();
-		JavascriptExecutor js = (JavascriptExecutor)driver;
-		js.executeScript("scrollBy(0, 5000)");
-		driver.findElement(By.linkText("Learn Java")).click();
+        //identify element
+        WebElement element = driver.findElement(By.name("key"));
+        
+        element.sendKeys("Java");
+        
+        // press ENTER
+        //element.sendKeys(Keys.RETURN);
+        
+        // Or use this command to click on the button
+		WebElement button = driver.findElement(By.xpath("//body/main[1]/section[1]/div[1]/div[1]/div[1]/div[1]/form[1]/button[1]/i[1]"));
+		button.click();
 		Thread.sleep(7000);
-        
+		
         //Closing the browser
         driver.quit();
- 
     }
 }
+
 ```
 
 ### The Result

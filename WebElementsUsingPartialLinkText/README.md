@@ -6,7 +6,7 @@
 * Step #2: locate the desired object within the web page. Right-click on the desired web element and inspect. 
 <img src="img/img2.png" />
 
-* Step #3: Click on Ctrl+F
+* Step #3: Click on Ctrl+F, and type any text
 
 ### Source Code
 ```Java
@@ -29,13 +29,14 @@ public WebDriver driver;
 				
 		driver = new ChromeDriver();
 		driver.manage().window().maximize();
-		driver.navigate().to("https://www.codingdojo.com/");
-		WebElement studentLogin = driver.findElement(By.linkText("Student Login"));
+		driver.navigate().to("https://www.codingdojo.com/");		
+		WebElement studentLogin = driver.findElement(By.partialLinkText("Login")); 
 		studentLogin.click();
 		Thread.sleep(7000);
 		driver.close();
 	}
 }
+
 ```
 
 ### The Result

@@ -1,4 +1,4 @@
-### Example for 'Basic' Type of XPath
+### Example for 'Contain' Type of XPath
 
 ### Source Code
 ```Java
@@ -26,26 +26,18 @@ public WebDriver driver;
 		//driver.manage().window().maximize();
 		driver.navigate().to("https://www.codingdojo.com/");
 		
-		Example for 'Basic' Type of XPath
-		WebElement buttonElement = driver.findElement(By.xpath("//button[@data-tab-id='alumni_testimonial']"));
-		String buttonResult = buttonElement.getText();
+		// Example for 'Contain' Type of XPath		
+		WebElement button = driver.findElement(By.xpath("//button[contains(text(),'Alumni Testimonials')]"));
+		String buttonResult = button.getText();
 		System.out.println(buttonResult);
-		
-		WebElement divElement = driver.findElement(By.xpath("//div[@id='video_modal']"));
-		String divResult = divElement.getText();
-		System.out.println(divResult);
-		
-		WebElement liElement = driver.findElement(By.xpath("//li[@class='mobile_nav_close']"));
-		String liResult = liElement.getText();
-		System.out.println(liResult);
-
+        
+		Thread.sleep(1000);
 		driver.close();
 	}
 }
+
 ```
 
 ### The Result
 <img src="img/img1.png" />
 <img src="img/img2.png" />
-<img src="img/img3.png" />
-<img src="img/img4.png" />

@@ -35,5 +35,5 @@ public WebDriver driver;
 ```
 
 ### The Result
-<img src="img/img1" />
-<img src="img/img2" />
+<img src="img/img1.png" />
+<img src="img/img2.png" />

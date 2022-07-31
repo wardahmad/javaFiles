@@ -1,6 +1,9 @@
 ### Interacting with New Tab
 
 ### Source Code
+### Open a new tab, a new window, and a private incognito window
+
+* New Tab
 ```Java
 package codingDojo;
 
@@ -44,8 +47,18 @@ public WebDriver driver;
 		driver.close();
 	}
 }
-
 ```
-
 ### The Result
 <img src="img/img1.png" />
+
+* New window
+```Java
+
+```
+<img src="img/" />
+
+* Private incognito window
+```Java
+
+```
+<img src="img/" />

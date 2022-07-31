@@ -122,8 +122,8 @@ public WebDriver driver;
 	
 	@Test
 	public void codingDojo() throws InterruptedException { 
-				
-		DesiredCapabilities capabilities = new DesiredCapabilities();
+        
+        DesiredCapabilities capabilities = new DesiredCapabilities();
         ChromeOptions options = new ChromeOptions();
         options.addArguments("--incognito");
         capabilities.setCapability(ChromeOptions.CAPABILITY, options);
@@ -131,9 +131,9 @@ public WebDriver driver;
         WebDriver driver = new ChromeDriver();
         driver.get("https://www.codingdojo.com/");
         System.out.println(driver.getTitle());
-		
-		Thread.sleep(5000);
-		driver.close();
+        
+        Thread.sleep(5000);
+        driver.close();
 	}
 }
 

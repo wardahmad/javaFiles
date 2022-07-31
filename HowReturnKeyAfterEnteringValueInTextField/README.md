@@ -31,7 +31,7 @@ public WebDriver driver;
 		inputElement.sendKeys("user@user.com");
 		Thread.sleep(7000);
 		inputElement.sendKeys(Keys.RETURN);
-		//textField.submit();	
+		//inputElement.submit();	
 		driver.close();
 	}
 }

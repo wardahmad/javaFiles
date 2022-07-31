@@ -94,7 +94,7 @@ public WebDriver driver;
 ### The Result
 <img src="img/img2.png" />
 
-### Private incognito window <p style={color='red'}>This code opens normal chrome window, not a Private incognito window</p>
+### Private incognito window <p style="color:red;">This code opens normal chrome window, not a Private incognito window</p>
 ```Java
 package codingDojo;
 

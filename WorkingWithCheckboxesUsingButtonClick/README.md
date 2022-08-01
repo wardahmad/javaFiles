@@ -49,6 +49,6 @@ public WebDriver driver;
 ```
 
 ### The Result
-![alt text](https://github.com/wardahmad/javaFiles/blob/master/WorkingWithCheckboxesUsingButtonClick/img/img1.gif "Logo Title Text 1")
+![alt text](https://github.com/wardahmad/javaFiles/blob/master/WorkingWithCheckboxesUsingButtonClick/img/img1.gif)
 
 <!-- <img src="img/" /> -->

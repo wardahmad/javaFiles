@@ -44,11 +44,10 @@ public WebDriver driver;
         {
             e.printStackTrace();
         }
-
-		Thread.sleep(2000);
-		driver.quit();
-	}
-
+        
+        Thread.sleep(2000);
+        driver.quit();
+    }
 }
 
 ```

@@ -36,14 +36,14 @@ public WebDriver driver;
 		WebElement radioButton = driver.findElement(By.xpath("(//span[@class='outer employementStatus'])[2]"));
 
 		try
-		{
-		    Thread.sleep(1000);
-		    radioButton.click();
-		}
+        {
+            Thread.sleep(1000);
+            radioButton.click();
+        }
         catch (InterruptedException e)
-		{
-		   e.printStackTrace();
-		}
+        {
+            e.printStackTrace();
+        }
 
 		Thread.sleep(2000);
 		driver.quit();

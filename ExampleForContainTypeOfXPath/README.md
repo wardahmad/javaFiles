@@ -26,7 +26,8 @@ public WebDriver driver;
 		//driver.manage().window().maximize();
 		driver.navigate().to("https://www.codingdojo.com/");
 		
-		// Example for 'Contain' Type of XPath		
+		// Example for 'Contain' Type of XPath	
+		// Using the text() method, Searching for text containing 'Alumni Testimonials'
 		WebElement button = driver.findElement(By.xpath("//button[contains(text(),'Alumni Testimonials')]"));
 		String buttonResult = button.getText();
 		System.out.println(buttonResult);

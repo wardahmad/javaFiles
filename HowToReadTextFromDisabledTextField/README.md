@@ -1,6 +1,25 @@
 ### How to Read a Text from a Disabled Text Field
 
 ### Source Code
+
+### HTML File
+```HTML
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Demo
+        </title>
+    </head>
+    <body>
+        <p id="demo"></p>
+        <input type="text" id="fname" value="Disabled Text Field" disabled>
+        <script src="./main.js"></script>
+    </body>
+</html>
+```
+
+### Java File
 ```Java
 package codingDojo;
 
@@ -24,14 +43,13 @@ public WebDriver driver;
 				
 		driver = new ChromeDriver();
 		//driver.manage().window().maximize();
-		driver.navigate().to("https://www.codingdojo.com/");
+		driver.navigate().to("http://127.0.0.1:5500/index.html");
 		
-		// How to Read a Text from a Text Field
-		// I can't find any disabled Text Field, So I used an enabled text field
-		WebElement inputElement = driver.findElement(By.xpath("(//input[@name='full_name'])[1]"));
-		inputElement.sendKeys("Wardah");
-		String inputAttr = inputElement.getDomAttribute("placeholder");
-		System.out.println("Value of placeholder attribute: "+inputAttr);
+		// How to Read a Text from a Disabled Text Field
+		WebElement inputElement = driver.findElement(By.xpath("//input[@id='fname']"));
+		String inputAttr = inputElement.getDomAttribute("value");
+		System.out.println("Value of the value attribute: "+inputAttr);
+		Thread.sleep(4000);
 		driver.close();
 	}
 }

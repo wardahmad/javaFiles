@@ -26,6 +26,7 @@ public WebDriver driver;
 		//driver.manage().window().maximize();
 		driver.navigate().to("https://www.codingdojo.com/");
 		
+		// Searching in the HTML Document about elements that have an attribute: id='main_nav_container'
 		WebElement element = driver.findElement(By.xpath("//*[@id='main_nav_container']"));
 		Thread.sleep(3000);
 		driver.close();

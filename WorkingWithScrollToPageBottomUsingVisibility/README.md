@@ -30,11 +30,12 @@ public WebDriver driver;
 		driver = new ChromeDriver();
 		driver.navigate().to("https://www.codingdojo.com/");
 		
+		// Selecting the parent, for an element has an attribute: class='carousel slide'
 		WebElement thirdEle = driver.findElement(By.xpath("(//*[@class='carousel slide']//parent::*)[1]"));
 		
 		JavascriptExecutor js = (JavascriptExecutor) driver;		
 				
-		//By visibility
+		//By element visibility
 		Thread.sleep(2000);
 		js.executeScript("arguments[0].scrollIntoView();",thirdEle );
 		

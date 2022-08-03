@@ -20,7 +20,9 @@ public WebDriver driver;
 		driver = new ChromeDriver();
 		driver.navigate().to("https://www.facebook.com/");
 		
+		// Input with id = email Attribute
 		String userNameTextBox = "input#email[name='email']";
+		// Input with id = pass Attribute
 		String passTextBox = "input#pass[data-testid='royal_pass']";
 		String submitButton = "button[type='submit']";
 		

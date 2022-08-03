@@ -24,6 +24,7 @@ public WebDriver driver;
 		driver = new ChromeDriver();
 		driver.navigate().to("https://www.amazon.com/");
 		
+		//Searching in the HTML Document about elements that have an attribute: name='site-search AND id='nav-search-bar-form'
 		List <WebElement> formElem = driver.findElements(By.xpath("//*[@name='site-search'][@id='nav-search-bar-form']"));
 		for (WebElement eachLink:formElem) {
 			System.out.println(eachLink.getText());

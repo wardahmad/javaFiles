@@ -39,7 +39,8 @@ public WebDriver driver;
 
 		//Switch to a new tab
 		driver.switchTo().window(tabs.get(1));
-		driver.get("http://google.com");Thread.sleep(5000);
+		driver.get("http://google.com");
+		Thread.sleep(5000);
 
 		//switch back control to old tab
 		driver.switchTo().window(tabs.get(0));
@@ -122,7 +123,7 @@ public WebDriver driver;
 	
 	@Test
 	public void codingDojo() throws InterruptedException { 
-        
+        // This code opens normal chrome window, not a Private incognito window
         DesiredCapabilities capabilities = new DesiredCapabilities();
         ChromeOptions options = new ChromeOptions();
         options.addArguments("--incognito");

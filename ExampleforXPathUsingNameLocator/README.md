@@ -26,8 +26,9 @@ public WebDriver driver;
 		//driver.manage().window().maximize();
 		driver.navigate().to("https://www.codingdojo.com/");
 		
-		// Example for XPath Using Class Locator		
-		driver.findElement(By.xpath("//div[@class=' header_block home']"));
+		// Example for XPath Using Class Locator
+		driver.findElement(By.xpath("//input[@name='email_address']"));	
+		//driver.findElement(By.xpath("//div[@class=' header_block home']"));
 		driver.close();
 	}
 }

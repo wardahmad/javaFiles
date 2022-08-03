@@ -26,7 +26,8 @@ public WebDriver driver;
 		//driver.manage().window().maximize();
 		driver.navigate().to("https://www.codingdojo.com/");
 		
-		// How to Read a Text from a Disabled Text Field
+		// How to Read a Text from a Text Field
+		// I can't find any disabled Text Field, So I used an enabled text field
 		WebElement inputElement = driver.findElement(By.xpath("(//input[@name='full_name'])[1]"));
 		inputElement.sendKeys("Wardah");
 		String inputAttr = inputElement.getDomAttribute("placeholder");

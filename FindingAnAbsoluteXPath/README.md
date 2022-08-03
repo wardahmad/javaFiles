@@ -29,6 +29,7 @@ public WebDriver driver;
 		driver = new ChromeDriver();
 		//driver.manage().window().maximize();
 		driver.navigate().to("https://www.codingdojo.com/"); 
+		//absolute XPath
 		WebElement button = driver.findElement(By.xpath("/html/body/div[1]/div[2]/div[2]/header/div[2]/div/a"));
 		button.click();
 		Thread.sleep(5000);

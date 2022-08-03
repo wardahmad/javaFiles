@@ -32,6 +32,7 @@ public WebDriver driver;
 		driver.navigate().to("https://www.codingdojo.com/");
 
 		Thread.sleep(2000);
+		// Selecting the <Body> tag and Scrolling to the end of this tag
 		driver.findElement(By.tagName("body")).sendKeys(Keys.PAGE_DOWN); 
 
 		Thread.sleep(2000);

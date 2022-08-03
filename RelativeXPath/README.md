@@ -21,6 +21,8 @@ public WebDriver driver;
 				
 		driver = new ChromeDriver();
 		driver.navigate().to("https://letcode.in/test");
+		
+		// Relative XPath / Using the text() method, Searching for text containing 'Dialog'
 		WebElement butElem = driver.findElement(By.xpath("//a[contains(text(),'Dialog')]"));
 		butElem.click();
         

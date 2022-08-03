@@ -26,7 +26,7 @@ public WebDriver driver;
 		//driver.manage().window().maximize();
 		driver.navigate().to("https://www.codingdojo.com/");
 		
-		Example for 'Basic' Type of XPath
+		//Example for 'Basic' Type of XPath
 		WebElement buttonElement = driver.findElement(By.xpath("//button[@data-tab-id='alumni_testimonial']"));
 		String buttonResult = buttonElement.getText();
 		System.out.println(buttonResult);

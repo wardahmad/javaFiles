@@ -21,7 +21,8 @@ public WebDriver driver;
 				
 		driver = new ChromeDriver();
 		driver.navigate().to("https://parabank.parasoft.com/parabank/index.htm");
-
+		
+		// Absolute XPath
 		WebElement butElem = driver.findElement(By.xpath("/html/body/div[1]/div[3]/div[1]/div/p[2]/a"));
 		butElem.click();
 		Thread.sleep(4000);

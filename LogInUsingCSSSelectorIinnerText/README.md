@@ -25,9 +25,11 @@ public class Instagram {
 
 		driver = new ChromeDriver();
 		driver.navigate().to("https://www.instagram.com/");
-
+		// Contains "username"
 		String userNameTextBox = "input[name*='username']";
+		// Contains "password"
 		String passTextBox = "input[name*='password']";
+		// Contains "submit"
 		String submitButton = "button[type*='submit']";
 
 		// Waiting 10 seconds, until the user name <input> element is available.

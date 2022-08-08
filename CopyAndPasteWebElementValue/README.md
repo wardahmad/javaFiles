@@ -56,4 +56,4 @@ public class InvokeChromePage {
 ```
 
 ### The Result
-<img src="img/img1.png" />
+<img src="img/img1.gif" />

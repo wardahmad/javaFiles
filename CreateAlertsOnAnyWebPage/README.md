@@ -42,27 +42,27 @@ public class Alert {
 		
 		
 		// Solution #1
-		//org.openqa.selenium.Alert alert = driver.switchTo().alert();
+		org.openqa.selenium.Alert alert = driver.switchTo().alert();
 		
 		// Send 'Testing' to alert textBox
-		//driver.switchTo().alert().sendKeys("Testing");
-		//System.out.println(alert.equals(null));
+		driver.switchTo().alert().sendKeys("Testing");
+		System.out.println(alert.equals(null));
 
 		// Capturing alert message.
-		//String alertMsg = driver.switchTo().alert().getText();
+		String alertMsg = driver.switchTo().alert().getText();
 		
-
 		// Displaying alert message 
-		//System.out.println(alertMsg);
+		System.out.println(alertMsg);
 
 		// Accepting alert 
-		//driver.switchTo().alert().accept();
+		driver.switchTo().alert().accept();
+
 		//==================================================//
 		
 		// Solution #2
-		//JavascriptExecutor js = (JavascriptExecutor) driver;
-		//js.executeScript("var p = prompt('I am a JS prompt', 'Testing');\r\n"
-		//		+ "log('You entered: ' + p);", "arguments[0].click()", jsPrompt);
+		JavascriptExecutor js = (JavascriptExecutor) driver;
+		js.executeScript("var p = prompt('I am a JS prompt', 'Testing');\r\n"
+				+ "log('You entered: ' + p);", "arguments[0].click()", jsPrompt);
 		
 		//=================================================//
 		

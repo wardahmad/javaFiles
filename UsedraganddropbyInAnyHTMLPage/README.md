@@ -29,7 +29,7 @@ public class DragnDrop {
 				.findElement(By.xpath("(//a[@class='ui-slider-handle ui-btn ui-shadow ui-btn-null'])[1]"));
 
 		// Using DragAndDrop method release draggable webelement into offset.
-		new Actions(driver).dragAndDropBy(draggable, 200, 10).build().perform();
+		new Actions(driver).dragAndDropBy(draggable, 200, 0).build().perform();
 		driver.quit();
 	}
 }

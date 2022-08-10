@@ -1,8 +1,6 @@
 ### Simple Test Case in the Selenium Grid
-<a href = 'https://docs.google.com/document/d/1Bu2wVp7NUdT5N4fgLIvKbcC21700lTL3ZYhek37LuE4/edit?usp=sharing'>
-
 ### First: Setting Up Selenium Grid in the Command Line
-</a>
+<a href = 'https://docs.google.com/document/d/1Bu2wVp7NUdT5N4fgLIvKbcC21700lTL3ZYhek37LuE4/edit?usp=sharing'>Here</a>
 
 ### Source Code
 ```Java

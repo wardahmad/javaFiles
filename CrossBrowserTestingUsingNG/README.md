@@ -2,7 +2,7 @@
 
 ### Source Code
 
-* `TestNGParameters.java` File
+### `TestNGParameters.java` File
 ```Java
 package testNGParameters;
 
@@ -56,7 +56,7 @@ public class TestNGParameters {
 
 ```
 
-* `testing.xml` File
+### `testing.xml` File
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">

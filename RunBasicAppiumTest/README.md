@@ -1,4 +1,4 @@
-### Installation of Appium Studio for Eclipse
+### Run a Basic Appium Test
 
 ### Steps for installation and configuration :
 

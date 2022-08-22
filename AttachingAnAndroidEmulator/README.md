@@ -8,7 +8,7 @@
 
 - Set(Java, Android SDK & Node) Home Paths in Mac OS system variables => https://www.baeldung.com/java-home-on-windows-7-8-10-mac-os-x-linux
 
-Open Android Studio and Configure Emulator
+### Open Android Studio and Configure Emulator
 
 * Setting up Appium Maven project with Java Client Dependencies
 - Visit https://mvnrepository.com/
